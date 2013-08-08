@@ -5,12 +5,30 @@
 	<title>A Very Basic Form</title>
     
 	<style type="text/css">
-	
-	
-		input {
-			background: #FFC;	
-			margin: 10px;
+		
+		.standard_input {
+			background: #FFF;	
+			padding: 5px 10px;
+			color: #999999;
+			border: solid 1px gray;
+			font-size: 14px;
+			display: block;
+			width: 400px;
+			margin-top: 20px;
 		}
+
+		textarea {
+			font-family: arial;
+		}
+
+		.submit_button {
+			background: green;
+			width: 200px;
+			padding: 5px;
+			color: white;
+			border-radius: 10px;
+		}
+
 
 	</style>
 
@@ -26,11 +44,13 @@
 	</h1>
 
 	<form method='post' action='/login.php'>
-		First Name<input type='text' id='first_name' name='first_name' class='standard_input' placeholder=' First Name'>
+		First Name<input type='text' id='first_name' name='first_name' class='standard_input' placeholder='First Name'>
 		
-		<input type='email' id='email' name='email' class='standard_input' placeholder=' Email'>
+		<input type='email' id='email' name='email' class='standard_input' placeholder='Email'>
 
-		<input type='password' id='password' name='password' class='standard_input' placeholder=' Password'>
+		<input type='password' id='password' name='password' class='standard_input' placeholder='Password'>
+
+		<textarea name='comments' id='comments' class='standard_input' placeholder='Comments'></textarea>
 
 		<div class='break'>
 			<input type='radio' name='gender' value='male' checked='true'> Male
@@ -56,6 +76,7 @@
 		<div class='break'>
 			<input type='submit' value ='SUBMIT THE FORM!!!' class='submit_button'>
 		</div>
+
 	</form>
 
 
