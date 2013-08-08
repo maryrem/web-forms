@@ -26,7 +26,36 @@
 	</h1>
 
 	<form method='post' action='/login.php'>
+		First Name<input type='text' id='first_name' name='first_name' class='standard_input' placeholder=' First Name'>
 		
+		<input type='email' id='email' name='email' class='standard_input' placeholder=' Email'>
+
+		<input type='password' id='password' name='password' class='standard_input' placeholder=' Password'>
+
+		<div class='break'>
+			<input type='radio' name='gender' value='male' checked='true'> Male
+			<input type='radio' name='gender' value='female'> Female
+		</div>
+
+		<div class='break'>
+			<input type='checkbox' name='contact' value='phone'> Phone
+			<input type='checkbox' name='contact' value='email'> Email
+		</div>
+
+		<div class='break'>
+			<select name='dob'>
+				<option value='' selected>Select an Age</option>
+				<option value='1987'>1987</option>
+				<option value='1986'>1986</option>
+				<option value='1985'>1985</option>
+				<option value='1984'>1984</option>
+				<option value='1983'>1983</option>
+			</select>
+		</div>
+
+		<div class='break'>
+			<input type='submit' value ='SUBMIT THE FORM!!!' class='submit_button'>
+		</div>
 	</form>
 
 
